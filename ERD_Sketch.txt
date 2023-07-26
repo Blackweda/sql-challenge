@@ -1,0 +1,37 @@
+Department
+-
+Department_No VARCHAR PK
+Department_Name VARCHAR
+
+Employee
+-
+Employee_No INTEGER PK
+Employee_Title VARCHAR 
+Birth_Date DATE
+First_Name VARCHAR
+Last_Name VARCHAR
+Sex VARCHAR
+Hire_Date DATE
+
+Salary
+-
+Employee_No INTEGER PK FK - Employee.Employee_No
+Salary INTEGER
+
+
+Title
+-
+Title_Id VARCHAR PK FK - Employee.Employee_Title
+Title VARCHAR
+
+Dep_Emp_Junction
+-
+Employee_No INTEGER PK FK - Employee.Employee_No
+Department_No VARCHAR FK - Department.Department_No
+
+
+
+Dep_Manager_Junction
+-
+Employee_No INTEGER PK FK - Employee.Employee_No
+Department_No VARCHAR FK - Department.Department_No
