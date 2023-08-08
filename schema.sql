@@ -29,7 +29,7 @@ CREATE TABLE Salary (
     emp_no int not null,
     salary int not null,
     FOREIGN KEY (emp_no) REFERENCES Employee (emp_no),
-	PRIMARY KEY (emp_no)
+    PRIMARY KEY (emp_no)
 );
 
 
